@@ -24,4 +24,5 @@ dependencies = [
     "sentence-transformers>=6.0.1",
     "streamlit>=1.64.0",
     "supabase>=2.31.0",
+    "torchvision>=0.29.0",
 ]
