@@ -2843,10 +2843,8 @@ def main():
 
                 except Exception as exc:
 
-                    st.error(
-                        "Something went wrong while "
-                        f"processing your question: {exc}"
-                    )
+                    st.error(f"ERROR: {type(exc).__name__}: {exc}")
+                    st.exception(exc)    
 
         st.rerun()
 
