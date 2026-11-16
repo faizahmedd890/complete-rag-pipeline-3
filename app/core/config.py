@@ -52,3 +52,8 @@ LLM_TIMEOUT = int(
 LLM_MAX_RETRIES = int(
     os.getenv("LLM_MAX_RETRIES", "3")
 )
+
+VECTOR_TABLE_NAME = os.getenv(
+    "VECTOR_TABLE_NAME",
+    "document_embeddings"
+)

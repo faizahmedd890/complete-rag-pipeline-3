@@ -27,11 +27,10 @@ def login_user(user):
 def logout_user():
     st.session_state.authenticated = False
     st.session_state.user = None
-    st.session_state.messages = []
     st.session_state.chat_id = None
+    st.session_state.messages = []
 
 
 def clear_chat():
     st.session_state.messages = []
     st.session_state.chat_id = None
-
